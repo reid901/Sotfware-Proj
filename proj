@@ -1,0 +1,28 @@
+import numpy as np # Load the Numpy package/library of numerical methods and call it np for brevity.
+import pandas as pd # Load the Pandas package/library of data management methods and call it pd
+import matplotlib.pyplot as plt # Load some of the Matplotlib package/library for plotting. 
+shootData = pd.read_csv("Shootings.csv")
+print(shootData.ndim) # Number of dimensions of data in object
+print(shootData.shape)
+print(np.size(shootData))
+print(type(shootData))
+#Police age, sex, race - 
+#Victim ....
+#Change over years - graph
+#Histogram of ages in each perp/vict
+#By district - match to population of district - overrepresntation
+#Location
+#Fatalaity?
+#Precinct
+
+#Use the distribution thing from class
+
+shootData_ar = np.array(shootData)
+perp_age = shootData.PERP_AGE_GROUP
+perp_sex = shootData.PERP_SEX
+perp_race = shootData.PERP_RACE
+print(perp_race)
+vic_age = shootData.VIC_AGE_GROUP
+vic_sex = shootData.VIC_SEX
+vic_race = shootData.VIC_RACE
+print(vic_race)
